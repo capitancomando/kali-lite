@@ -4,7 +4,6 @@
 <body bgcolor=black text=lime>
 
 <center>
-# kali-lite
 Kali linux lite es un script instalador de kali linux liviano
 La instalacion se hace desde termux.
 
@@ -41,7 +40,7 @@ cd ~/kali_linux && ./start-kali.sh
 
 Una vez dentro de kali, ejecuta:  bash kali-setup.sh
 
-<img src="termux_desktop/capturas/imagen7.png"
+<img src="Screenshot_20221112-033001.png"
      alt="Install Nahfer os"
      width="315"
      height="180">
