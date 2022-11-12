@@ -2,6 +2,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 clear
 directorio=$(pwd);
+mkdir kali_linux
 echo $directorio
 # banner creado por mi
 # github: https://github.com/capitancomando/
