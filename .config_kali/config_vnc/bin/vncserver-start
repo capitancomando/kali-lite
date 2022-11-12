@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+export USER=root
+export HOME=/root
+echo
+echo "Escribe el puerto a abrir:"
+read -p "~~>" puerto
+vncserver :$puerto -geometry 1920x1080
