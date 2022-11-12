@@ -42,8 +42,8 @@ Una vez dentro de kali, ejecuta:  bash kali-setup.sh
 
 <img src=".banner/Screenshot_20221112-033001.png"
      alt="Install Nahfer os"
-     width="315"
-     height="180">
+     width="720"
+     height="1280">
 
 </center></body></head></html>
 
