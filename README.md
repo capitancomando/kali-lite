@@ -59,10 +59,12 @@ O alguna otra.
 Link: https://play.google.com/store/apps/details?id=com.realvnc.viewer.android
 
 <br><h2> Explicacion de que hacer con la app vncserver</h2>
-Una vez instalada la aplicacion vncviewer, debes dar en la (+)
-Cruz y luego en la opcion Address: escribir localhost:1
+Una vez instalada la aplicacion vncviewer,
+Debes dar en la (+) cruz y luego en la opcion Address:
+Escribir:  localhost:1
 Si es para abrir el puerto 1, depende del puerto que tengas, abierto en el 
-Vncserver. Luego en la opcion name, escribes kali linux y seleccionas create y luego connect
+Vncserver.
+Luego en la opcion name, escribes kali linux y seleccionas create y luego connect
 Escribes tu contraseña de vncserver y listo.
 
 <img src=".banner/kali-linux.png"
