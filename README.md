@@ -39,7 +39,11 @@ con escritorio xfce: 1 giga
 cd ~/kali_linux && ./start-kali.sh
 
 Una vez dentro de kali, ejecuta:  bash kali-setup.sh
-
+<br>
+Se abrira un menu y le das ala opcion 1 <br>
+Luego para instalar un escritorio,le das ala opcion 2 y elige el escritorio que desees, recomiendo xfce4<br>
+Luego ala opcion 3, y listo eso es todo lo necesario, en la opcion 4<br>
+Tienes todas las herramientas para instalar, pero eso es opcional.<br>
 
 
 <h2>Comandos para abrir puerto local con vncserver</h2>
