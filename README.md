@@ -30,7 +30,8 @@ con escritorio xfce: 1 giga
      cd kali-lite 
      bash install-kali.sh
 
-Comandos para ajecutar kali-linux
+<h2>Comandos para ajecutar kali-linux<h2><br>
 
 COMANDOS:  cd ~/kali_linux && ./start-kali.sh
+
 Una vez dentro de kali, ejecuta:  bash kali-setup.sh
