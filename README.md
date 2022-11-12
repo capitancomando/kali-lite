@@ -45,7 +45,7 @@ O alguna otra.
 
 Link: https://play.google.com/store/apps/details?id=com.realvnc.viewer.android
 
-Comandos para abrir puerto con vncserver
+<h2>Comandos para abrir puerto con vncserver</h2>
 Abrir puerto:
 $ vncserver-start
 
