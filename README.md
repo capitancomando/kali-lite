@@ -40,18 +40,30 @@ cd ~/kali_linux && ./start-kali.sh
 
 Una vez dentro de kali, ejecuta:  bash kali-setup.sh
 
+
+
+<h2>Comandos para abrir puerto local con vncserver</h2>
+Abrir puerto:
+$ vncserver-start
+
+Luego seleccionas el puerto que quieras abrir, ejemplo 1
+
+Cerrar puertos:
+$ vncserver-stop
+Luego seleccionas el puerto que quieras cerrar, ejemplo 1
+
+<h3> para ver el escritorio? </h3>
 Necesitas la aplicacion vncviewer para emular el escritorio
 O alguna otra.
 
 Link: https://play.google.com/store/apps/details?id=com.realvnc.viewer.android
 
-<h2>Comandos para abrir puerto con vncserver</h2>
-Abrir puerto:
-$ vncserver-start
-
-Cerrar puertos:
-$ vncserver-stop
-
+<br><h2> Explicacion de que hacer con la app vncserver</h2>
+Una vez instalada la aplicacion vncviewer, debes dar en la (+)
+Cruz y luego en la opcion Address: escribir localhost:1
+Si es para abrir el puerto 1, depende del puerto que tengas, abierto en el 
+Vncserver. Luego en la opcion name, escribes kali linux y seleccionas create y luego connect
+Escribes tu contraseña de vncserver y listo.
 
 <img src=".banner/kali-linux.png"
      alt="kali"
