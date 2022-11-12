@@ -17,7 +17,7 @@ Atu antojo.
 
 Creador del script: Comander-747.
 
-Configuracion By: Comander747     Nahfer Hacking
+Configuracion By: Comander747
 
 kali linux peso: 71 megas.
 
