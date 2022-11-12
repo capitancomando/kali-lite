@@ -81,7 +81,7 @@ Escribes tu contraseña de vncserver y listo.
 <img src=".banner/Screenshot_20221112-033001.png"
      alt="Install Nahfer os"
      width="420"
-     height="720">
+     height="620">
 
 </center></body></head></html>
 
