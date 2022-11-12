@@ -49,7 +49,7 @@ $ vncserver-start
 Luego seleccionas el puerto que quieras abrir, ejemplo 1
 
 Cerrar puertos:
-$ vncserver-stop
+$ vncserver-stop <br>
 Luego seleccionas el puerto que quieras cerrar, ejemplo 1
 
 <h3> para ver el escritorio? </h3>
