@@ -64,7 +64,8 @@ Debes dar en la (+) cruz y luego en la opcion Address:<br>
 Escribir:  localhost:1 <br>
 Si es para abrir el puerto 1, depende del puerto que tengas, abierto en el 
 Vncserver.<br>
-Luego en la opcion name, escribes kali linux y seleccionas create y luego connect
+Luego en la opcion name, escribes kali linux y seleccionas create y luego connect<br>
+
 Escribes tu contraseña de vncserver y listo.
 
 <img src=".banner/kali-linux.png"
