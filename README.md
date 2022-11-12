@@ -40,6 +40,7 @@ cd ~/kali_linux && ./start-kali.sh
 
 Una vez dentro de kali, ejecuta:  bash kali-setup.sh
 <br>
+<h2> Explicacion menu-kali-setup</h2><br>
 Se abrira un menu y le das ala opcion 1 <br>
 Luego para instalar un escritorio,le das ala opcion 2 y elige el escritorio que desees, recomiendo xfce4<br>
 Luego ala opcion 3, y listo eso es todo lo necesario, en la opcion 4<br>
