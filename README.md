@@ -35,6 +35,7 @@ con escritorio xfce: 1 giga
 cd ~/kali_linux && ./start-kali.sh
 
 Una vez dentro de kali, ejecuta:  bash kali-setup.sh
+<p>
 
 <img src=".banner/Screenshot_20221112-033001.png"
      alt="Install Nahfer os"
