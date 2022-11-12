@@ -40,6 +40,19 @@ cd ~/kali_linux && ./start-kali.sh
 
 Una vez dentro de kali, ejecuta:  bash kali-setup.sh
 
+Necesitas la aplicacion vncviewer para emular el escritorio
+O alguna otra.
+
+Link: https://play.google.com/store/apps/details?id=com.realvnc.viewer.android
+
+Comandos para abrir puerto con vncserver
+Abrir puerto:
+$ vncserver-start
+
+Cerrar puertos:
+$ vncserver-stop
+
+
 <img src=".banner/kali-linux.png"
      alt="kali"
      width="800"
