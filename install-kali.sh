@@ -1,6 +1,16 @@
 #verificar_arch=$(uname -m);
 #!/data/data/com.termux/files/usr/bin/bash
 clear
+if [ ! "$(command -v proot)" ]; then
+       echo -e "\e[31mInstalando paquete [proot]\e[0m"
+       apt install proot -y
+fi
+
+if [ ! "$(command -v wget)" ]; then
+       echo -e "\e[31mInstalando paquete [wget]\e[0m"
+       apt install wget -y
+fi
+clear
 directorio=$(pwd);
 mkdir kali_linux
 echo $directorio
