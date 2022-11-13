@@ -1,5 +1,6 @@
 #verificar_arch=$(uname -m);
 #!/data/data/com.termux/files/usr/bin/bash
+rm -rf .git
 clear
 if [ ! "$(command -v proot)" ]; then
        echo -e "\e[31mInstalando paquete [proot]\e[0m"
@@ -12,7 +13,7 @@ if [ ! "$(command -v wget)" ]; then
 fi
 clear
 directorio=$(pwd);
-mkdir kali_linux
+#mkdir kali_linux
 echo $directorio
 # banner creado por mi
 # github: https://github.com/capitancomando/
@@ -30,7 +31,7 @@ echo -e "\e[1;36m      kali linux peso: 71 megas.
                        con las herramientas: unknow.\e[0m"
 echo
 #####@#@@#
-cd kali_linux
+#cd kali_linux
 folder=kali-fs
 if [ -d "$folder" ]; then
  first=1
@@ -61,8 +62,10 @@ if [ "$first" != 1 ];then
                 echo -e "\e[1;31m Tu Procesador es: \e[0m" "\e[1;32m $archurl \e[0m"
                 echo
                 sleep 2
-                wget --no-check-certificate --continue "https://kalilinuxnahferdownloads.000webhostapp.com/kali-rootfs-${archurl}.tar.xz" -O $tarball
-                wget --no-check-certificate --continue "https://kalilinuxserver.000webhostapp.com/kali_linux/kali-rootfs-${archurl}.tar.xz" -O $tarball
+                 wget --no-check-certificate --continue "https://kalilinuxnahferdownloads.000webhostapp.com/kali-rootfs-${archurl}.tar.xz" -O $tarball
+                 wget --no-check-certificate --continue "https://kalilinuxserver.000webhostapp.com/kali_linux/kali-rootfs-${archurl}.tar.xz" -O $tarball
+
+
 fi
 cur=`pwd`
 	mkdir -p "$folder"
@@ -71,10 +74,10 @@ cur=`pwd`
 	proot --link2symlink tar -xJf ${cur}/${tarball}||:
 	cd "$cur"
 #####
-cp $directorio/.config_kali/kali-setup.sh $directorio/kali_linux/kali-fs/root/
-cp -r $directorio/.config_kali $directorio/kali_linux/kali-fs/root
-cp -r $directorio/.config_kali/config_vnc/.vnc $directorio/kali_linux/kali-fs/root
-cp -r $directorio/.config_kali/config_vnc/bin $directorio/kali_linux/kali-fs/usr/local/
+cp $directorio/.config_kali/kali-setup.sh $directorio/kali-fs/root/
+cp -r $directorio/.config_kali $directorio/kali-fs/root
+cp -r $directorio/.config_kali/config_vnc/.vnc $directorio/kali-fs/root
+cp -r $directorio/.config_kali/config_vnc/bin $directorio/kali-fs/usr/local/
 ###
 fi
 
@@ -142,6 +145,9 @@ echo "Disabled pulseaudio autospawn"
 echo "export PULSE_SERVER=127.0.0.1" >> kali-fs/etc/profile
 echo "Setting Pulseaudio server to 127.0.0.1"
 echo
+echo "clear && cd $directorio && bash start-kali.sh">>kali
+sleep
+chmod +x kali && mv kali /data/data/com.termux/files/usr/bin/
 clear
 echo -e "\e[1;31marreglando shebang de $ bin \e[0m"
 sleep 2
@@ -156,15 +162,16 @@ echo -e "\e[1;34mEliminando imagen, para liverar espacio. \e[0m"
 sleep 1
 rm $tarball
 echo
-echo -e "\e[1;35mMoviendo Kali_linux a $HOME \e[0m"
+echo -e "\e[1;35mKali lite, configurado... \e[0m"
 echo
 sleep 1
-mv $directorio/kali_linux ~/
-mkdir $directorio/kali_linux
-echo -e "\e[1;36m ve a ~/kali_linux y ejecuta  ./${bin}\e[0m"
+
+echo -e "\e[1;36m ve a ~/kali-lite y ejecuta  ./${bin}\e[0m"
 sleep 1
 echo
-echo -e "\e[1;31m COMANDOS: \e[0m"  "\e[1;32mcd ~/kali_linux && ./${bin}\e[0m"
+echo -e "\e[1;31m COMANDOS: \e[0m"  "\e[1;32mcd $directorio && ./${bin}\e[0m"
+echo
+echo -e "\e[1;31m COMANDO PARA EJECUTAR DIRECTO: \e[0m"  "\e[1;32mkali\e[0m"
 echo
 sleep 1
 echo -e "\e[1;31mUna vez dentro de kali, ejecuta: \e[0m"  "\e[1;32mbash kali-setup.sh\e[0m"
