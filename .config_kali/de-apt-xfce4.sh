@@ -13,15 +13,6 @@ apt-get install xfe -y
 apt-get clean
 
 #Setup the necessary files
-mkdir ~/.vnc
-cd config_vnc
-cp -r .vnc ~/
-cp -r bin /usr/local/
-wget "https://github.com/capitancomando/Servidor_Nahfer/blob/main/nahfer-kali" -P /usr/local/bin/
-chmod +x ~/.vnc/xstartup
-chmod +x /usr/local/bin/vncserver-start
-chmod +x /usr/local/bin/vncserver-stop
-
 
 echo "########################@###############################################"
 echo " "
@@ -67,5 +58,13 @@ echo "export DISPLAY=":1"" >> /etc/profile
 source /etc/profile
 
 vncserver-start
+
+cd config_vnc
+cp -r .vnc ~/
+cp -r bin /usr/local/
+wget "https://github.com/capitancomando/Servidor_Nahfer/blob/main/nahfer-kali" -P /usr/local/bin/
+chmod +x ~/.vnc/xstartup
+chmod +x /usr/local/bin/vncserver-start
+chmod +x /usr/local/bin/vncserver-stop
 
 startxfce &
